@@ -35,9 +35,7 @@ answers = ['蘋果','大猩猩','香蕉']
 defaultAnswerset = 'total'
 
 
-TOKEN = 'MTE2NDg0NTUwOTg5MTA4NDMzMA.Gj7eQ_.DDZEoJA4mcsE6hiQ6_qRnC2GfbN5fNhjHqyI1c'
-
-#TOKEN = 'MTEwNjk3MDUxNzQ4NDg4MDAzMg.G30G_z.lJnPyDVfiAurX4VYt0G2NOG5LAYHSOpxZUL2Is'
+TOKEN =''
 
 intents = discord.Intents.all()
 bot = commands.Bot(command_prefix='/', intents=intents)
