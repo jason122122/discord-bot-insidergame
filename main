@@ -618,7 +618,7 @@ async def resultVote():
                 expectMember = currentmember[item[4]][0]
                 break
 
-        resultstr = resultstr + '由於投票數最多的人有多個，因此答對者的選擇' + expectMember.display_name + '將是投票數最多的人\n'
+        resultstr = resultstr + '由於投票數最多的人有多個，因此回答者' + expectMember.display_name + '將是投票數最多的人\n'
     
     resultstr = resultstr + expectMember.display_name 
     await GameChannel.send(f'{resultstr}')
