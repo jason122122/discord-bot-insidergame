@@ -5,8 +5,8 @@ import random
 import asyncio
 import csv
 import pathlib
-
-
+import nest_asyncio
+nest_asyncio.apply()
 # 設定
 LimitTime = 300
 
@@ -77,7 +77,7 @@ def getInsiderMember():
     for items in currentmember:
         if items[1] == Role.Insider:
             return items[0]
-    print("can't find master")
+    print("can't find insider")
 
 def getCurentMemberList():
     memberstr = ''
